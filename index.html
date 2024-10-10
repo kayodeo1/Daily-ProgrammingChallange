@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coding Community Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f0f0f0; }
+.container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+h1, h2 { color: #333; }
+.section { margin-top: 40px; }
+iframe { width: 100%; border: none; }
+#stats-container { display: flex; justify-content: space-between; margin-top: 20px; }
+.stat-box { flex: 1; margin: 0 10px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; text-align: center; }
+.challenge-button { background-color: #10a37f; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s; }
+.challenge-button:hover { background-color: #0d8c6f; }
+@media (max-width: 768px) {
+  .header { flex-direction: column; align-items: flex-start; }
+  .challenge-button { margin-top: 10px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Coding Community Dashboard</h1>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3UBx0xj6IaMsC9mYbTNlVmnZYVSFmHEk7Eoj426J-rPhOyA/viewform?usp=sf_link" target="_blank">
+      <button class="challenge-button">Today's Challenge</button>
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>Community Statistics</h2>
+    <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/30c71487-2659-42c4-a817-88ab3536dc6f/page/gqnEE" frameborder="3px" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+  </div>
+</div>
+</body>
+</html>
